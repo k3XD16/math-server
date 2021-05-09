@@ -1,11 +1,6 @@
 import socket
 from subprocess import Popen, STDOUT, PIPE
 from threading import Thread
-<<<<<<< HEAD
-
-HOST = ''
-PORT = 4444
-=======
 from comm_thread import MathServerCommunicationThread
 from comm_thread import ProcessOutputThread
 
@@ -24,4 +19,3 @@ while True: # To accept many incoming connections.
 	conn, addr = s.accept() # Open door
 	start_new_math_thread(conn, addr)
 s.close()
->>>>>>> d836d8c7fd85a101c39c63326fff3387aaab8d56
